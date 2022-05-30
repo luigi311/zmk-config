@@ -169,7 +169,7 @@
 		
 		default_layer {
 			bindings = <
-								&kp C_MUTE      &kp KP_NUMLOCK  &kp KP_SLASH
+						&kp C_MUTE      &kp KP_NUMLOCK  &kp KP_SLASH
 				&kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_ASTERISK
 				&kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS
 				&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_PLUS
@@ -181,10 +181,10 @@
 
 		 func_layer {
 			 bindings = <
-								&trans           &trans          &bootloader
+						&trans           &trans          &bootloader
 				&out OUT_TOG    &trans           &trans          &trans
 				&trans          &trans           &trans          &bt BT_CLR
-				&bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &none
+				&bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &trans
 				&trans          &trans           &trans          &rgb_ug RGB_TOG
 			 >;
 
