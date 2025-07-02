@@ -5,6 +5,7 @@
  */
 
 #include "snap.dtsi"
+#include "snap.keymap"
 
 &kscan_demux {
     input-gpios
