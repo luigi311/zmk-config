@@ -22,7 +22,7 @@
 		combo_reboot {
 			timeout-ms = <100>;
 			key-positions = <0 1 4 5>;
-			bindings = <&reset>;
+			bindings = <&sys_reset>;
 		};
 	};
 };
