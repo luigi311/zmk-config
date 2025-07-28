@@ -12,3 +12,9 @@ A small 8-key macropad as a cheap alternative to the stream deck.
 <https://www.thingiverse.com/thing:5238367>
 
 west build -p -b nice_nano_v2 -- -DSHIELD=stream_cheap_2x4
+
+## Default Keymap
+
+The default keymap is provided in the module, here is a visual guide made using caksoylar's great [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+
+![keymap](./keymap.svg)
