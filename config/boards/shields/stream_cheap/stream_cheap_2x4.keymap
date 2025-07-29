@@ -32,6 +32,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+			display-name = "Default";
 			bindings = <
 				&kp F13 &kp F14 &kp F15 &kp F16
 				&kp F17 &kp F18 &kp F19 &mo LOWER
@@ -39,8 +40,9 @@
 		};
 
 		lower_layer {
+			display-name = "Lower";
 			bindings = <
-				&kp F20 &kp F21 &kp F22 &kp F23
+				&kp F20 &kp F21 &kp F22 &studio_unlock
 				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &trans
 				>;
 		};

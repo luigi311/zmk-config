@@ -6,3 +6,4 @@ url: https://www.thingiverse.com/thing:5238367
 requires: [pro_micro]
 features:
   - keys
+  - studio

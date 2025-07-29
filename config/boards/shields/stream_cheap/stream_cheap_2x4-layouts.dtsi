@@ -1,0 +1,45 @@
+/*
+ * stream_cheap_2x4-layouts.dtsi
+ * Defines a 2×4 matrix‑transform and the corresponding physical layout
+ */
+ 
+#include <physical_layouts.dtsi>
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    /*
+     * default_transform
+     * — a 2‑row × 4‑column matrix mapping, row‑major order
+     */
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        rows       = <2>;
+        columns    = <4>;
+        map = <
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3)
+            RC(1,0) RC(1,1) RC(1,2) RC(1,3)
+        >;
+    };
+
+    /*
+     * stream_cheap_2x4_physical_layout
+     * — ties the transform + your kscan node to actual key positions
+     */
+    stream_cheap_2x4_physical_layout: stream_cheap_physical_layout {
+        compatible    = "zmk,physical-layout";
+        display-name  = "Stream Cheap 2×4";
+        transform     = <&default_transform>;
+        kscan         = <&kscan0>;
+
+        keys = <
+            &key_physical_attrs 56 52    0   56   0 0 0
+            &key_physical_attrs 56 52   70   56   0 0 0
+            &key_physical_attrs 56 52  140   56   0 0 0
+            &key_physical_attrs 56 52  210   56   0 0 0
+            &key_physical_attrs 56 52    0  140   0 0 0
+            &key_physical_attrs 56 52   70  140   0 0 0
+            &key_physical_attrs 56 52  140  140   0 0 0
+            &key_physical_attrs 56 52  210  140   0 0 0
+        >;
+    };
+};
