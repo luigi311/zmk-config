@@ -7,10 +7,12 @@
 #include "snap.dtsi"
 #include "snap.keymap"
 
-chosen {
-    zephyr,display = &oled;
-    zmk,kscan = &kscan_composite;
-    zmk,matrix-transform = &default_transform;
+/ {
+    chosen {
+        zephyr,display = &oled;
+        zmk,kscan = &kscan_composite;
+        zmk,matrix-transform = &default_transform;
+    };
 };
 
 &kscan_demux {
