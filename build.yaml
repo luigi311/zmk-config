@@ -13,25 +13,25 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snap_central_left dongle_display
     artifact-name: nice_nano_v2_snap_central_left
 
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snap_central_dongle dongle_display
     artifact-name: nice_nano_v2_snap_central_dongle
 
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snap_peripheral_left nice_view_adapter nice_view
     artifact-name: nice_nano_v2_snap_peripheral_left
 
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snap_peripheral_right
     artifact-name: nice_nano_v2_snap_peripheral_right
 
   
   # Reset
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
     artifact-name: nice_nano_v2_reset
 
